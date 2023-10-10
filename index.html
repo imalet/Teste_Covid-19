@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de Santé</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Formulaire de Santé</h2>
+        <form action="traitement.php" method="POST">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" class="form-control" id="prenom" name="prenom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="poids">Poids (en kg) :</label>
+                <input type="number" class="form-control" id="poids" name="poids" min="1" max="150" required>
+            </div>
+
+            <div class="form-group">
+                <label>Fievre</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="fievre" name="fievre" value="Oui" required>
+                    <label class="form-check-label" for="fievre">Oui</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="fievre_non" name="fievre" value="Non" required>
+                    <label class="form-check-label" for="fievre_non">Non</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Toux Seche :</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="toux_oui" name="toux" value="Oui" required>
+                    <label class="form-check-label" for="toux_oui">Oui</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="toux_non" name="toux" value="Non" required>
+                    <label class="form-check-label" for="toux_non">Non</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Difficultes Respiratoire</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="difficulte_respiratoire"
+                        name="difficulte_respiratoire" value="Oui" required>
+                    <label class="form-check-label" for="difficulte_respiratoire">Oui</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="difficulte_respiratoire_non"
+                        name="difficulte_respiratoire" value="Non" required>
+                    <label class="form-check-label" for="difficulte_respiratoire_non">Non</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Fatigue</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="fatigue" name="fatigue" value="Oui" required>
+                    <label class="form-check-label" for="fatigue">Oui</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="fatigue_non" name="fatigue" value="Non" required>
+                    <label class="form-check-label" for="fatigue_non">Non</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Douleur Musculaire</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="douleur_musculaire" name="douleur_musculaire"
+                        value="Oui" required>
+                    <label class="form-check-label" for="douleur_musculaire">Oui</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="douleur_musculaire_non" name="douleur_musculaire"
+                        value="Non" required>
+                    <label class="form-check-label" for="douleur_musculaire_non">Non</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Perte de goût :</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="perte_gout_oui" name="perte_gout" value="Oui" required>
+                    <label class="form-check-label" for="perte_gout_oui">Oui</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="perte_gout_non" name="perte_gout" value="Non" required>
+                    <label class="form-check-label" for="perte_gout_non">Non</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Diarrhée :</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="diarrhee_oui" name="diarrhee" value="Oui" required>
+                    <label class="form-check-label" for="diarrhee_oui">Oui</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="diarrhee_non" name="diarrhee" value="Non" required>
+                    <label class="form-check-label" for="diarrhee_non">Non</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Age :</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="moins de 18" name="age" value="moins de 18" required>
+                    <label class="form-check-label" for="moins de 18">Moins de 18 Ans</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="entre 18 et 35" name="age" value="entre 18 et 35" required>
+                    <label class="form-check-label" for="entre 18 et 35">Entre 18 - 35 ans</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="entre 36 et 60" name="age" value="entre 36 et 60" required>
+                    <label class="form-check-label" for="entre 36 et 60">Entre 36 - 60 ans</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="plus de 60" name="age" value="plus de 60" required>
+                    <label class="form-check-label" for="plus de 60">Plus de 60 ans</label>
+                </div>
+            </div>
+
+            <button type="submit" name="sub" class="btn btn-primary">Soumettre</button>
+        </form>
+    </div>
+</body>
+
+</html>
